@@ -1,0 +1,1 @@
+level: log, messages: Comentario del caso de prueba:,TransferId-Validar campo  al enviarlo vacio (404)

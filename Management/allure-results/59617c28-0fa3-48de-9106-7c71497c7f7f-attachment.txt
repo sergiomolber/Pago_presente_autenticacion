@@ -1,0 +1,23 @@
+{
+  "package": {
+    "type": "COLLECTION",
+    "createDate": null,
+    "packageId": null,
+    "sourceId": "65c242c3-1ea6-45c4-a71f-a41538ded408"
+  },
+  "transfers": [
+    {
+      "transferId": "agG9DdF3lx2c3j2",
+      "source": "$573003004001",
+      "target": "wcc7vHUcnYpJcba8eiqEmmARtR3cS1PGfV",
+      "amount": null,
+      "description": null,
+      "targetBank": null,
+      "merchantId": null,
+      "sourceChannel": null,
+      "sourceId": null,
+      "createDate": null
+    }
+    
+  ]
+}

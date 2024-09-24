@@ -1,0 +1,14 @@
+pm.test("Status code is 400", function () {
+    pm.response.to.have.status(400);
+});
+
+// Captura la variable code
+const responseJson = pm.response.json();
+const code = responseJson.errors[0].code;
+const codenum = Number(code);
+pm.environment.set("codenum", codenum);
+
+// Compara la variable de entorno 'code' con 1013 y 1018
+pm.test("La variable de entorno 'code' es 1013 o 1018", function () {
+    pm.expect([1013, 1018]).to.include(codenum);
+});

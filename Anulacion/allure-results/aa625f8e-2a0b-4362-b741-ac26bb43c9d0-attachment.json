@@ -1,0 +1,13 @@
+{
+    "message-uid": "fsdfdsfsd",
+    "api-key": "f494c2f3-2e29-4766-b706-ec9313470472",
+    "Authorization": "Bearer {{access_toke32}}",
+    "User-Agent": "PostmanRuntime/7.39.0",
+    "Accept": "*/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "8ad42613-6098-4023-b4f4-5539598ce8a1",
+    "Host": "business.transfiya.com.co",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Length": "0"
+}

@@ -1,0 +1,22 @@
+{
+  "package": {
+    "type": "COLLECTION",
+    "createDate": "",
+    "packageId": "",
+    "sourceId":"fdfdsfdsfdsfsd"
+  },
+  "transfers": [
+    {
+      "transferId": "FV3J1qOe7sIcRtT",
+      "source": "$573124080330",
+      "target": "wcc7vHUcnYpJcba8eiqEmmARtR3cS1PGfV",
+      "amount":21,
+      "description": "Probando",
+      "targetBank": "COLOMBIA",
+      "merchantId": "AG1525AXCS2AG",
+      "sourceChannel": "POS",
+      "sourceId": "d0508e8b-3065-467f-990c-dc1b2aea8944",
+      "createDate": "2023-01-03T23:47:26.186Z"
+    }
+      ]
+}

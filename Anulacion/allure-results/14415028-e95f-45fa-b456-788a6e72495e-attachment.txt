@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"null","requestDt":"2024-09-24T10:47:17.933Z","requestAppId":"236dfe767d6e6fa613058cc5cf5afe04"},"statusCode":404,"statusDesc":"NOT FOUND","errors":[{"code":"1014","detail":"La transacción consultada no se encuentra registrada"}]}

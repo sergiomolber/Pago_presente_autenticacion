@@ -1,0 +1,32 @@
+pm.test("Status code is 404", function () {
+    pm.response.to.have.status(404);
+});
+// Guarda la respuesta JSON en una variable
+var jsonData = pm.response.json();
+
+// Verifica que los campos en "meta" estén presentes y sean correctos
+pm.test("Verificar que los campos en 'meta' estén presentes", function () {
+    pm.expect(jsonData.meta).to.have.property("messageUid");
+    pm.expect(jsonData.meta).to.have.property("requestDt");
+    pm.expect(jsonData.meta).to.have.property("requestAppId");
+});
+
+// Verifica que los campos "statusCode" y "statusDesc" estén presentes y sean correctos
+pm.test("Verificar que 'statusCode' y 'statusDesc' estén presentes", function () {
+    pm.expect(jsonData).to.have.property("statusCode");
+    pm.expect(jsonData).to.have.property("statusDesc");
+});
+
+// Verifica que "errors" esté presente y sea un array
+pm.test("Verificar que 'errors' esté presente y sea un array", function () {
+    pm.expect(jsonData).to.have.property("errors");
+    pm.expect(jsonData.errors).to.be.an("array");
+});
+
+// Verifica que cada objeto en el array "errors" tenga los campos requeridos
+pm.test("Verificar que cada objeto en 'errors' tenga los campos requeridos", function () {
+    jsonData.errors.forEach(function (error) {
+        pm.expect(error).to.have.property("code");
+        pm.expect(error).to.have.property("detail");
+    });
+});

@@ -1,0 +1,45 @@
+// Asegúrate de que la respuesta está en el formato JSON
+let responseData = pm.response.json();
+
+// Extrae los valores del primer objeto en "transfersInfo"
+let transferId = responseData.transfersInfo[0].transferId;
+let txRef = responseData.transfersInfo[0].txRef;
+
+// Guarda los valores en variables de entorno o de colección
+pm.environment.set("transferId", transferId);
+pm.environment.set("txRef", txRef);
+
+// Guarda la respuesta JSON en una variable
+var jsonData = pm.response.json();
+
+// Verifica que los campos en "meta" estén presentes y sean correctos
+pm.test("Verificar que los campos en 'meta' estén presentes", function () {
+    pm.expect(jsonData.meta).to.have.property("messageUid");
+    pm.expect(jsonData.meta).to.have.property("requestDt");
+    pm.expect(jsonData.meta).to.have.property("requestAppId");
+});
+
+// Verifica que los campos "statusCode" y "statusDesc" estén presentes y sean correctos
+pm.test("Verificar que 'statusCode' y 'statusDesc' estén presentes", function () {
+    pm.expect(jsonData).to.have.property("statusCode");
+    pm.expect(jsonData).to.have.property("statusDesc");
+});
+
+// Verifica que "transfersInfo" esté presente y sea un array
+pm.test("Verificar que 'transfersInfo' esté presente y sea un array", function () {
+    pm.expect(jsonData).to.have.property("transfersInfo");
+    pm.expect(jsonData.transfersInfo).to.be.an("array");
+});
+
+// Verifica que cada objeto en el array "transfersInfo" tenga los campos requeridos
+pm.test("Verificar que cada objeto en 'transfersInfo' tenga los campos requeridos", function () {
+    jsonData.transfersInfo.forEach(function (transfer) {
+        pm.expect(transfer).to.have.property("transferId");
+        pm.expect(transfer).to.have.property("source");
+        pm.expect(transfer).to.have.property("target");
+        pm.expect(transfer).to.have.property("txRef");
+    });
+});
+
+
+

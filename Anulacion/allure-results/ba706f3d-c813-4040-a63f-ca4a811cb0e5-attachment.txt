@@ -1,0 +1,1 @@
+{"token_type":"Bearer","access_token":"AAIgNjUyNzRkOGVhMzJkN2MxYzM0MTBhNmIyNzkyYzI3N2at_4nNL4bDNzXTG0NmFunjir4qUuqn3N6vKY1QFDQXteUwgIazfyMQIbCQE0lfG0pW0ahrk9l7WgUuuuAQ4es5zR8oG_KXFeV3P4yl7Y10QQeOV5BmqQAJKZamR-4LEZ0","scope":"CALLBACK","expires_in":3600,"consented_on":1727192603}

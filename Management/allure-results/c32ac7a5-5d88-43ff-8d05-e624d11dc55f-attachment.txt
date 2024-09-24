@@ -1,0 +1,23 @@
+{
+  "package": {
+    "type": "PRUEBA",
+    "createDate": null,
+    "packageId": null,
+    "sourceId": null
+  },
+  "transfers": [
+    {
+      "transferId": null,
+      "source": null,
+      "target": null,
+      "amount": null,
+      "description": null,
+      "targetBank": null,
+      "merchantId": null,
+      "sourceChannel": null,
+      "sourceId": null,
+      "createDate": null
+    }
+    
+  ]
+}

@@ -1,0 +1,59 @@
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+// Guarda la respuesta JSON en una variable
+var jsonData = pm.response.json();
+
+// Verifica que los campos en "meta" estén presentes y sean correctos
+pm.test("Verificar que los campos en 'meta' estén presentes", function () {
+    pm.expect(jsonData.meta).to.have.property("messageUid");
+    pm.expect(jsonData.meta).to.have.property("requestDt");
+    pm.expect(jsonData.meta).to.have.property("requestAppId");
+});
+
+// Verifica que los campos "statusCode" y "statusDesc" estén presentes y sean correctos
+pm.test("Verificar que 'statusCode' y 'statusDesc' estén presentes", function () {
+    pm.expect(jsonData).to.have.property("statusCode");
+    pm.expect(jsonData).to.have.property("statusDesc");
+});
+
+// Verifica que los campos en "data" estén presentes y sean correctos
+pm.test("Verificar que los campos en 'data' estén presentes", function () {
+    pm.expect(jsonData.data).to.have.property("transferId");
+    pm.expect(jsonData.data).to.have.property("txRef");
+    pm.expect(jsonData.data).to.have.property("status");
+    pm.expect(jsonData.data).to.have.property("source");
+    pm.expect(jsonData.data).to.have.property("target");
+    pm.expect(jsonData.data).to.have.property("amount");
+    pm.expect(jsonData.data).to.have.property("description");
+    pm.expect(jsonData.data).to.have.property("targetBank");
+    pm.expect(jsonData.data).to.have.property("merchantId");
+    pm.expect(jsonData.data).to.have.property("sourceChannel");
+    pm.expect(jsonData.data).to.have.property("sourceId");
+    pm.expect(jsonData.data).to.have.property("createDate");
+    pm.expect(jsonData.data).to.have.property("updateDate");
+});
+
+// Opcionalmente, puedes agregar validaciones adicionales para los valores específicos
+pm.test("Verificar los valores específicos de los campos", function () {
+    pm.expect(jsonData.meta.messageUid).to.be.a("string");
+    pm.expect(new Date(jsonData.meta.requestDt)).to.be.a("date");
+    pm.expect(jsonData.meta.requestAppId).to.be.a("string");
+
+    pm.expect(jsonData.statusCode).to.be.a("number");
+    pm.expect(jsonData.statusDesc).to.be.a("string");
+
+    pm.expect(jsonData.data.transferId).to.be.a("string");
+    pm.expect(jsonData.data.txRef).to.be.a("string");
+    pm.expect(jsonData.data.status).to.be.a("string");
+    pm.expect(jsonData.data.source).to.be.a("string");
+    pm.expect(jsonData.data.target).to.be.a("string");
+    pm.expect(jsonData.data.amount).to.be.a("string");
+    pm.expect(jsonData.data.description).to.be.a("string");
+    pm.expect(jsonData.data.targetBank).to.be.a("string");
+    pm.expect(jsonData.data.merchantId).to.be.a("string");
+    pm.expect(jsonData.data.sourceChannel).to.be.a("string");
+    pm.expect(jsonData.data.sourceId).to.be.a("string");
+    pm.expect(new Date(jsonData.data.createDate)).to.be.a("date");
+    pm.expect(new Date(jsonData.data.updateDate)).to.be.a("date");
+});

@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"probando","requestDt":"2024-09-24T10:48:05.738Z","requestAppId":"236dfe767d6e6fa613058cc5cf5afe04"},"statusCode":400,"statusDesc":"BAD REQUEST","errors":[{"code":"1020","transferId":"XqCCzHWlj5QFlfx","detail":"XqCCzHWlj5QFlfx, - $573003004001, - wcc7vHUcnYpJcba8eiqEmmARtR3cS1PGfV, - 100.00, - 125, - Transaction already processed."}]}

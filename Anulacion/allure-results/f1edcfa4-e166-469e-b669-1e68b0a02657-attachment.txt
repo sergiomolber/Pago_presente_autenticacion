@@ -1,0 +1,14 @@
+// Obtiene la respuesta JSON
+const responseJson = pm.response.json();
+const transferId = responseJson.transfersInfo[0].transferId;
+pm.environment.set("transferId", transferId);
+
+// Obtiene la respuesta JSON
+const responseJson1 = pm.response.json();
+const txRef = responseJson1.transfersInfo[0].txRef;
+pm.environment.set("txRef", txRef);
+
+//obtenre tiempo de respuesta
+pm.test('El tiempo de respuesta es menor a 3000ms', function(){
+    pm.expect(pm.response.responseTime).to.be.below(3000);
+});

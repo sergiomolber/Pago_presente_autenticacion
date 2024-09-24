@@ -1,0 +1,1 @@
+{"transferId":"pFCe9Qt3ZcmtxEp","tx_id":"00Bf4j8aZLdkIod7Q","status":"REJECTED","type":"REQUEST","created":"2023-11-09T11:56:10-05:00","updated":"2024-09-24T10:43:44.808Z","amount":"100.00","symbol":"$tin"}

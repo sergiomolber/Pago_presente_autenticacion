@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"c9813ba4-52ee-4c10-9228-a026852","requestDt":"2024-09-24T09:41:35.901Z","requestAppId":"236dfe767d6e6fa613058cc5cf5afe04"},"statusCode":400,"statusDesc":"BAD REQUEST","errors":[{"code":"1020","transferId":"1wBhWdkb8MLHNWi","detail":"Se esperaba un solo elemento Item en transfers, pero se encontraron más"}]}

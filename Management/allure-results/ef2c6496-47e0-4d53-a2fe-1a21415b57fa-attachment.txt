@@ -1,0 +1,8 @@
+{
+  "package": {
+    "type": "COLLECTION",
+    "createDate": null,
+    "packageId": null,
+    "sourceId": "65c242c3-1ea6-45c4-a71f-a41538ded408"
+  }
+}
