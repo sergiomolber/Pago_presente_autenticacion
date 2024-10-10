@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "f40a1d51-e437-496d-92c3-aca606bf5ac5",
-		"name": "Crear access token",
+		"_postman_id": "083fa4c5-0491-41b6-920f-35665530c973",
+		"name": "Crear access errores 400",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "34404218"
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/autenticacion-pago-presente~c6e20c33-0558-43bf-8128-8d9f50586380/collection/29460625-083fa4c5-0491-41b6-920f-35665530c973?action=share&source=collection_link&creator=29460625"
 	},
 	"item": [
 		{
@@ -42,12 +43,12 @@
 					"urlencoded": [
 						{
 							"key": "client_id",
-							"value": "{{client-id}}",
+							"value": "{{client_id}}",
 							"type": "text"
 						},
 						{
 							"key": "client_secret",
-							"value": "{{client-secret}}",
+							"value": "{{client_secret}}",
 							"type": "text"
 						},
 						{

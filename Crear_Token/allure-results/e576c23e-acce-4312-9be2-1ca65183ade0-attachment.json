@@ -1,0 +1,17 @@
+{
+    "Connection": "Keep-Alive",
+    "Transfer-Encoding": "chunked",
+    "User-Agent": "PostmanRuntime/7.39.0",
+    "Accept": "*/*",
+    "Postman-Token": "a5f17e93-56a1-427e-8afc-6f2a3cc89781",
+    "Accept-Encoding": "gzip, deflate, br",
+    "X-Client-IP": "10.129.10.1",
+    "X-Global-Transaction-ID": "dd51bf1b67082f8700004ed0",
+    "Content-Type": "application/json",
+    "Cache-Control": "no-store",
+    "Pragma": "no-cache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "WWW-Authenticate": "Bearer error='unauthorized_client'",
+    "Date": "Thu, 10 Oct 2024 19:48:23 GMT",
+    "Content-Encoding": "gzip"
+}
